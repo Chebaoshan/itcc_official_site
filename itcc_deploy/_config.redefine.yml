@@ -107,8 +107,8 @@ home_banner:
   style: fixed # static or fixed
   # Home banner image
   image:
-    light: /images/wallhaven-wqery6-light.webp # light mode
-    dark: /images/wallhaven-wqery6-dark.webp # dark mode
+    light: /images/darkold.webp # light mode
+    dark: /images/darkold.webp # dark mode
   # Home banner title
   title: "  "
   # Home banner subtitle
@@ -118,9 +118,9 @@ home_banner:
       enable: true # Whether to enable hitokoto
       show_author: true # Whether to show author
       api: https://v1.hitokoto.cn # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
-    typing_speed: 20 # Typing speed (ms)
+    typing_speed: 80 # Typing speed (ms)
     backing_speed: 80 # Backing speed (ms)
-    starting_delay: 2100 # Start delay (ms)
+    starting_delay: 800 # Start delay (ms)
     backing_delay: 1500 # Backing delay (ms)
     loop: false # Whether to loop
     smart_backspace: true # Whether to smart backspace
@@ -147,7 +147,7 @@ home_banner:
   # Home banner social links
   social_links:
     # Whether to enable
-    enable: true
+    enable: false
     # Social links style
     style: default # default, reverse, center
     # Social links
@@ -180,6 +180,9 @@ navbar:
     pages: 1000px #other pages
   # Navbar links
   links:
+    ホーム:
+      path: /
+      icon: fa-regular fa-house
     代表挨拶:
       path: /intro/intro
       icon: fa-regular fa-handshake

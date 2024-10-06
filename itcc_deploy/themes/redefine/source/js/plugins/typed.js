@@ -35,16 +35,9 @@ export default function initTyped(id) {
   }
 
   if (theme.home_banner.subtitle.hitokoto.enable) {
-    fetch(usrHitokotoAPI)
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.from_who && theme.home_banner.subtitle.hitokoto.show_author) {
-          typing(data.hitokoto + "——" + data.from_who);
-        } else {
-          typing(data.hitokoto);
-        }
-      })
-      .catch(console.error);
+    typing(
+      "IT共創はお客様と共に価値ある成果を創ってまいり、</br>いつも安心、安全なソフトウェアを提供いたします。"
+    );
   } else {
     const sentenceList = [...theme.home_banner.subtitle.text];
     if (document.getElementById(id)) {

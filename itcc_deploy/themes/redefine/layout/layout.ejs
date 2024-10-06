@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="<%= config.language %>">
 <%- partial('_partials/head') %>
+<style>
+    body {
+      background-image: url('/images/background.webp'); /* 替换为您的背景图像路径 */
+      background-size: cover; /* 使背景图像覆盖整个页面 */
+      background-repeat: no-repeat; /* 不重复背景图像 */
+    }
+  </style>
 <body>
 <%- body %>
 <%- partial('_partials/scripts') %>

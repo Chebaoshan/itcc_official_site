@@ -6,7 +6,7 @@ info:
   # Author name
   author: Kochichou
   # Site URL
-  url: https://redefine.ohevan.com
+  url: http://localhost:4000
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 # IMAGE CONFIGURATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
@@ -118,10 +118,10 @@ home_banner:
       enable: true # Whether to enable hitokoto
       show_author: true # Whether to show author
       api: https://v1.hitokoto.cn # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
-    typing_speed: 80 # Typing speed (ms)
+    typing_speed: 70 # Typing speed (ms)
     backing_speed: 80 # Backing speed (ms)
-    starting_delay: 800 # Start delay (ms)
-    backing_delay: 1500 # Backing delay (ms)
+    starting_delay: 1700 # Start delay (ms)
+    backing_delay: 200 # Backing delay (ms)
     loop: false # Whether to loop
     smart_backspace: true # Whether to smart backspace
   # Color of home banner text
@@ -183,12 +183,12 @@ navbar:
     ホーム:
       path: /
       icon: fa-regular fa-house
-    代表挨拶:
-      path: /intro/intro
-      icon: fa-regular fa-handshake
     会社概要:
       path: /company/company
       icon: fa-regular fa-circle-info
+    ニュース:
+      path: /news/news
+      icon: fa-regular fa-handshake
     採用情報:
       path: /hiring/hiring
       icon: fa-regular fa-users

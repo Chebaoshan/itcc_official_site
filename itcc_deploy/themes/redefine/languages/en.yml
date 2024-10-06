@@ -29,7 +29,6 @@ top: TOP
 sticky: Sticky
 go-back-home: Go Back Home
 
-
 # ----------------------------------------
 # Menu Translation
 # ----------------------------------------
@@ -47,7 +46,7 @@ shuoshuo: Shuoshuo
 # ----------------------------------------
 site_uv: VISITOR COUNT
 site_pv: TOTAL PAGE VIEWS
-read_more: Read more
+read_more: すべてを読む
 wordcount: Words
 min2read: Mins
 status: Status

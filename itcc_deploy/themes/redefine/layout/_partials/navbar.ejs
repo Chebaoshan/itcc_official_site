@@ -23,6 +23,7 @@
                         } else { %>
                             <%
                                 let link = theme.navbar.links[i];
+                                let host =theme.info.url
                                 let hasSubmenus = link.submenus;
                                 let isActive = isInHomePaging(page.path, link.path) || is_current(link.path);
                                 let linkHref = hasSubmenus ? '#' : url_for(link.path);
@@ -35,7 +36,7 @@
                             <li class="navbar-item">
                                 <!-- Menu -->
                                 <a class="<%= hasSubmenus ? 'has-dropdown' : (isActive ? 'active' : '') %>"
-                                   href="<%= linkHref %>"
+                                    href="<%= linkHref === '/news/news' || linkHref ==='/'? host  + linkHref : linkHref %>"                             
                                         <%= onClickAction %>>
                                     <%- iconClass %>
                                     <%= linkText %>
@@ -111,7 +112,7 @@
                         </div>
                         <% } else { %>
                         <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full <%= isActive ? 'active' : '' %>"
-                           href="<%= linkPath %>"
+                           href="<%= linkPath %>" 
                         >
                             <span>
                                 <%= linkText %>
@@ -157,4 +158,3 @@
     <div class="window-mask"></div>
 
 </header>
-

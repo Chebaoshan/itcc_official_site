@@ -1,0 +1,57 @@
+## ニューズ一覧
+
+---
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  });
+</script>
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="../tupian/nature-1.jpg" /> <!-- 修改为新的图片资源 -->
+    </div>
+    <div class="swiper-slide">
+      <img src="../tupian/nature-2.jpg" /> <!-- 修改为新的图片资源 -->
+    </div>
+    <div class="swiper-slide">
+      <img src="../tupian/nature-3.jpg" /> <!-- 修改为新的图片资源 -->
+    </div>
+    <div class="swiper-slide">
+      <img src="../tupian/nature-4.jpg" /> <!-- 修改为新的图片资源 -->
+    </div>
+    <div class="swiper-slide">
+      <img src="../tupian/nature-5.jpg" /> <!-- 修改为新的图片资源 -->
+    </div>
+        <div class="swiper-slide">
+      <img src="../tupian/nature-6.jpg" /> <!-- 修改为新的图片资源 -->
+    </div>
+        <div class="swiper-slide">
+      <img src="../tupian/nature-7.jpg" /> <!-- 修改为新的图片资源 -->
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+<!-- 初始化 Swiper -->
+
+2023 年（令和 5 年）5 月  
+会社業務拡大のために神田小川町に移転しました。
+
+2022 年（令和 4 年）  
+株式会社 IT 共創を設立しました。

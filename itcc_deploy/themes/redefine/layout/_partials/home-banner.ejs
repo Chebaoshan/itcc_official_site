@@ -59,17 +59,22 @@
     </div>
     <script>
         const scrollToMain = ()=> {
-            console.log('scroll');
             const target = document.querySelector('.main-content-container');
             document.querySelector('.homebutton').style.display="none"
             target.scrollIntoView({ behavior: 'smooth'});
         }
                 // 添加监听事件
-            window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', () => {
         const homeButton = document.querySelector('.homebutton');
         if (window.scrollY === 0) {
-            homeButton.style.display = "flex"; // 显示 homebutton
-        }
-    });
+            if (homeButton) { // 添加非空检查
+                homeButton.style.display = "flex"; // 显示 homebutton
+                } 
+            } else if (window.scrollY + window.innerHeight >= document.body.offsetHeight) {
+                if (homeButton) { // 添加非空检查
+                homeButton.style.display = "none"; // 隐藏 homebutton
+                }
+            }
+        });
     </script>
 </div>

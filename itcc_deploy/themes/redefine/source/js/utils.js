@@ -3,7 +3,6 @@ import { navbarShrink } from "./layouts/navbarShrink.js";
 import { initTOC } from "./layouts/toc.js";
 import { main } from "./main.js";
 import imageViewer from "./tools/imageViewer.js";
-
 export const navigationState = {
   isNavigating: false,
 };

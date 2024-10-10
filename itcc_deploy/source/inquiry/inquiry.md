@@ -87,6 +87,6 @@
             <input type="checkbox" name="privacy" id="privacy" required>
             <label for="privacy"><a href="/privacy/privacy">個人情報の取り扱いに同意する</a></label>
         </div>
-        <input class="Form-Btn text-center" value="送信する" onclick="sendEmail()">
+        <button class="Form-Btn text-center"  onclick="sendEmail()">送信する</button>
     </div>
 </form>

@@ -60,8 +60,8 @@
               const phone = document.getElementsByName("phone")[0].value;
               const email = document.getElementsByName("email")[0].value;
               const message = document.getElementsByName("message")[0].value;
-              const mailtoLink = `mailto:example@example.com?subject=お問い合わせ&body=お名前: ${name}%0A電話番号: ${phone}%0Aメールアドレス: ${email}%0Aお問い合わせ内容: ${message}`;
-              window.location.href = mailtoLink;
+              const mailtoLink = `mailto:jimu@it-cocreation.co.jp?subject=お問い合わせ&body=お名前: ${name}%0A電話番号: ${phone}%0Aメールアドレス: ${email}%0Aお問い合わせ内容: ${message}`;
+              window.location.replace(mailtoLink);
           };
 </script>
 

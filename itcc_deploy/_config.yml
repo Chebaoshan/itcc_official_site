@@ -3,12 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 株式会社IT共創
 subtitle: ""
-description: ""
-keywords:
-author: John Doe
-language: en
+description: "IT共創はお客様と共に価値ある成果を創ってまいり、
+いつも安心、安全なソフトウェアを提供いたします。"
+keywords: itcc
+author: Kochichou
+language: jp
 timezone: ""
 
 # URL

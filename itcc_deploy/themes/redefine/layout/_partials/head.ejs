@@ -1,12 +1,9 @@
 <head>
     <meta charset="utf-8">
-    <meta property="og:title" content="<%= page.title %>" />
-    <meta property="og:description" content="<%= page.description %>" />
+    <meta property="og:title" content="株式会社IT共創 - あなたと共に美しい未來を創る" />
+    <meta property="og:description" content="IT共創はお客様と共に価値ある成果を創ってまいり、 いつも安心、安全なソフトウェアを提供いたします。" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="<%= page.keywords || config.keywords  %>">
-    <% if (!theme.global.open_graph) { %>
-        <meta name="description" content="<%= page.description || config.description %>">
-    <% }%>
+    <meta name="keywords" content="it共創">
     <meta name="author" content="<%= theme.info.author || config.author %>">
     <!-- preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,12 +68,7 @@
         title = __(page.title);
     }
     %>
-    <title>
-        <% if (title) { %>
-            <%= title %> -
-        <% } %>
-        <%= theme.info.title || config.title || 'Redefine Theme' %>
-    </title>
+    <title>株式会社IT共創 - あなたと共に美しい未來を創る</title>
 
     <%- renderCSS('fonts/Chillax/chillax.css') %>
 
@@ -140,6 +132,5 @@
     <% if (theme.fontawesome.sharp_solid == true) { %>
         <%- renderCSS('fontawesome/sharp-solid.min.css') %>
     <% } %>
-    <title>株式会社IT共創 - あなたと共に美しい未來を創る</title>
 </head>
 
